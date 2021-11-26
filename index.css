@@ -10,7 +10,7 @@
     text-align: center;
 }
 .header{
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
@@ -20,7 +20,7 @@
 .header-title{
     margin-left: 15px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 .nav{
     display: flex;
@@ -30,41 +30,46 @@
 .nav-item{
     display:flex;
     margin-left: 100px;    
-    font-size: 20px;
+    font-size: 14px;
 }
 .main{
     width: 100%;
     margin: 0 auto;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 .contents{
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
 }
 .filter-contents{
     margin: 0 auto;
     margin-top:100px;
-    width:1300px;
+    width:1200px;
     height: 300px;
     border: 1px solid black;
 }
 .event{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 .event-item{
-    width: 300px;
+    width: 280px;
     height: 600px;
     border: 1px solid black;    
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 60px;
-    border-radius: 15px;
+    border-radius: 4px;
 }
-.item-title{
-    height: 50px;
+.item-header{
+    height: 40px;
     border-bottom: 1px solid black;
-    line-height: 50px;
+    line-height: 40px;
+}
+.item-body{
+    padding: 20px;
 }
 .footer{
     width: 100%;
