@@ -28,7 +28,11 @@ app.get('/signUp',(req,res)=>{
     console.log(__dirname);  
     res.sendFile(path.join(__dirname , "../html/signUp.html"));    
 })
+app.get('/login',(req,res)=>{
+    console.log(__dirname);  
+    res.sendFile(path.join(__dirname , "../html/logOn.html"));
+})
 app.listen(3000,(err)=>{
     if(err) return console.log(err);
     else return console.log("connected to database");    
-});
+})
