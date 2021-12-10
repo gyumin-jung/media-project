@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../public/index.css" />
+  <link rel="stylesheet" type="text/css" href="../public/autocomplete.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrap">
+    <div class="header">
+      <div id="title" class="header-title">NewsCal</div>
+      <script src="/autocomplete.js"></script>
+      <div class="nav">
+        <div class="nav-item">menu1</div>
+        <div class="nav-item">menu2</div>
+        <div class="nav-item"><a href="/signUp.html">Sign up</a></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="contents">
+        <form class="filter-company" autocomplete="off" action="/action_page.php">
+          <div class="autocomplete">
+            <input id="myInput" type="text" name="myCountry" placeholder="Company 입력">
+          </div>
+          <input type="submit" value="Go">
+        </form>
+        <script src="../js/autocomplete.js"></script>
+        <div class="event">
+          <div class="event-item">
+            <div class="item-header">logo</div>
+            <div class="item-body">
+              <div class="company-name">ajou</div>
+              <div class="event-date">11/15</div>
+              <div class="event-title"><a href="#none">부실대학선정</a></div>
+              <div class="event-detail">아주대학교 상장폐지확정</div>
+              <div class="event-footer">update 11/28</div>
+            </div>
+            <div class="footer"></div>
+          </div>
+          <div class="event-item">
+            <div class="item-header">title2</div>
+          </div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+          <div class="event-item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+
+  </div>
+  <script src="/autocomplete.js"></script>
+
+  <body>
+
+</html>
