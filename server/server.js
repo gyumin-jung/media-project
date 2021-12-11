@@ -1,16 +1,24 @@
 const express = require('express');
-//const mongoose = require('mongoose');
 const app = express();
-//const User = require('./models/user');
 const path = require('path');
-//const { Mongoose } = require('mongoose');
-//require("dotenv").config({path:"variables.env"});
-static = require('serve-static')
+static = require('serve-static');
+//var db_config = require('../db/config')
+var bodyParser = require('body-parser');
+var routes = require('../router/router_search')
+
+app.use('/router',express.static(__dirname));
+
 app.use('/assets',express.static(__dirname));
+app.use('/assets',static(path.join(__dirname,'router')));
 app.use('/assets/css', express.static(path.join(__dirname, '../assets/css')));
 app.use('/assets/js', express.static(path.join(__dirname, '../assets/js')));
 app.use('/assets/sass', express.static(path.join(__dirname, '../assets/sass')));
 app.use('/assets/webfonts', express.static(path.join(__dirname, '../assets/webfonts')));
+app.use('/search', express.static(path.join(__dirname, '../router')));
+app.use('/search/',routes);
+
+
+
 
 app.get('/',(req,res)=>{
     console.log(__dirname);  
@@ -32,6 +40,7 @@ app.get('/login',(req,res)=>{
     console.log(__dirname);  
     res.sendFile(path.join(__dirname , "../html/logOn.html"));
 })
+
 app.listen(3000,(err)=>{
     if(err) return console.log(err);
     else return console.log("connected to database");    
