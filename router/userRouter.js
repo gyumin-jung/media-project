@@ -1,7 +1,7 @@
 const express = require('express');
 const  router = express.Router()
-const movieCtrl = require('../controller/userController')
+const userCtrl = require('../controller/userController')
 
-router.route('/')
-    .get(movieCtrl.getUser)
+router.post('/')
+    .get(userCtrl.getUser)
 module.exports = router
